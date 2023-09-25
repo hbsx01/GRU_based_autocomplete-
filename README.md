@@ -11,14 +11,16 @@ Traditional recurrent neural networks (RNNs) suffer from the vanishing gradient 
 The core GRU model is implemented in Python using more primitive Pytorch and Numpy functions for efficient numerical computations. It consists of an input layer, GRU hidden layers with update and reset gates, and an output layer with a softmax activation to produce a probability distribution over possible next words. The model is trained on a text corpus.
 
 ## Usage
-Train the model on a text corpus of your choice.
+Train the model on a text corpus of your choice. This can be changed on lines 47 and 48 of the .py file "GRU_based_autocomplete.py"
 
 This will train the GRU for 30 epochs on the origin_of_species extract from works on Charles Darwin and save the trained model weights.
 
 The model can then be used to generate text continuations by sampling from the predicted next-word distributions: 
+
 
 ## Results 
 Preliminary results validating the original GRU paper show the model is able to capture long-term dependencies and learn patterns to successfully generate multi-word text continuations, demonstrating its effectiveness for text modeling tasks.
 
 ## Future Work
 Areas for improvement include developing beam search to produce higher quality generations, and testing on larger modern corpora.
+
